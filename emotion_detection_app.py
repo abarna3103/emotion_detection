@@ -75,7 +75,7 @@ class EmotionCNN(nn.Module): # ... (Model definition remains the same)
 @st.cache_resource
 def load_model():
     model = EmotionCNN()
-    model.load_state_dict(torch.load(r"C:\Users\Public\GUVI\code\face emotion detection\emotion-detection-streamlit\emotion_cnn_model.pth", map_location=torch.device('cpu')))  # ***REPLACE WITH YOUR MODEL PATH***
+    model.load_state_dict(torch.load(r"C:\Users\Public\GUVI\code\project\emotion_detection\emotion_cnn_model.pth", map_location=torch.device('cpu')))  # ***REPLACE WITH YOUR MODEL PATH***
     model.eval()
     return model
 
